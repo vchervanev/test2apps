@@ -1,2 +1,2 @@
-web: cd app1 && bundle exec rackup config.ru
-web2: cd app2 && bundle exec rackup config.ru
+web: PATH=/app/app1/bin:/app/app1/vendor/bundle/bin:/app/app1/vendor/bundle/ruby/2.5.0/bin:/usr/local/bin:/usr/bin:/bin HOME=/app/app1 GEM_PATH=/app/app1/vendor/bundle/ruby/2.5.0 cd app1 && bundle exec rackup config.ru
+web2: PATH=/app/app2/bin:/app/app2/vendor/bundle/bin:/app/app2/vendor/bundle/ruby/2.5.0/bin:/usr/local/bin:/usr/bin:/bin HOME=/app/app2 GEM_PATH=/app/app2/vendor/bundle/ruby/2.5.0 cd app2 && bundle exec rackup config.ru
